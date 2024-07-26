@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#FFB6C1">
+
+    <style>
+
+body {
+            background-color: #FFB6C1;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #yes{
+          background-color: #1899D6;
+          border: solid transparent;
+          border-radius: 16px;
+          color: #FFFFFF;
+          cursor: pointer;
+          font-family:cursive;
+          font-size: 20px;
+        }
+        #no
+        {
+          background-color: #1899D6;
+          border: solid transparent;
+          border-radius: 16px;
+          color: #FFFFFF;
+          cursor: pointer;
+          font-family:cursive;
+          font-size: 20px;
+        }
+            </style>
+
+    <link rel="stylesheet" href="index.css">
+    <div align = 'center'>
+        <img src="peach-goma-love-heart-dance.gif">
+    </div>
+    
+    <div align = 'center'>
+            <h1>
+                Soch le Mere Jaisa <br>
+                 Koi aur Nahi Milegaa!!
+            </h1>
+    </div>
+    <br>
+    <br>
+    <div align = 'center'>
+        <button onclick="lastpage()" id ="yes">YES!</button>
+        &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;
+        <button onclick="nextpage()" id = "no">NO!</button>
+    </div>
+    
+    <script>
+        function lastpage()
+        {
+            window.location.href = 'index4.html';
+        }
+        function nextpage()
+        {
+            window.location.href = 'index3.html';
+        }
+    </script>
+
+</body>
+</html>

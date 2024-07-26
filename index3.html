@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #FFB6C1;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #yes, #no {
+            background-color: #1899D6;
+            border: solid transparent;
+            border-radius: 16px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: cursive;
+            font-size: 20px;
+
+        }
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 300px;
+        }
+        #no {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="please-please-please.gif" width="270px" alt="Please GIF">
+    </div>
+
+    <h1> Please Man jaa yarrr!! <br> bohot pyar karta huu... </h1>
+
+    <div class="button-container">
+        
+        <button onclick="lastpage()" id="yes">YES!</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button id="no">NO!</button>
+        
+    </div>
+
+    <script>
+        function lastpage() {
+            window.location.href = 'index4.html';
+        }
+
+        const noButton = document.getElementById('no');
+        const buttonContainer = document.querySelector('.button-container');
+
+        function moveButtonRandomly() {
+            const containerHeight = buttonContainer.clientHeight;
+            const containerWidth = buttonContainer.clientWidth;
+            const randomTop = Math.random() * (containerHeight - noButton.offsetHeight) + 'px';
+            const randomLeft = Math.random() * (containerWidth - noButton.offsetWidth) + 'px';
+            noButton.style.top = randomTop;
+            noButton.style.left = randomLeft;
+        }
+
+        noButton.addEventListener('click', function() {
+            moveButtonRandomly();
+        });
+    </script>
+</body>
+</html>

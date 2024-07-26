@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#FFB6C1">
+
+    <style>
+
+body {
+            background-color: #FFB6C1;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+#yes{
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-family:cursive;
+  font-size: 20px;
+}
+#no
+{
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family:cursive;
+  font-size: 20px;
+}
+    </style>
+
+    <a  id = "last" "href="index4.html"></a>
+
+    <link rel="stylesheet" href="index.css">
+    <div align = 'center'>
+        <img src="peach-goma-peach.gif" width="270px">&nbsp;
+    </div>
+
+    <div align = 'Center'>
+        <h1>Do you like Mee!! &nbsp;</h1>
+    </div>
+    <br>
+    <br>  
+    <div align = 'Center'>
+
+            <button onclick="lastpage()" id = "yes"> YES!</button>
+
+        
+        &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;
+        <button onclick="nextpage()" id = "no">NO!</button>
+    </div>
+  
+    <script>
+        function lastpage()
+        {
+            window.location.href = 'index4.html';
+        }
+        function nextpage()
+        {
+            window.location.href = 'index2.html';
+        }
+    </script>
+
+</body>
+</html>
